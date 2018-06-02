@@ -1,0 +1,12 @@
+[Unit]
+Description=ShadowsocksR service
+
+[Service]
+ExecStart=/root/shadowsorksr/logrun.sh
+ExecStop=/root/shadowsorksr/stop.sh
+TimeoutSec=30
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
