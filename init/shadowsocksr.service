@@ -2,7 +2,7 @@
 Description=ShadowsocksR service
 
 [Service]
-ExecStart=/root/shadowsorksr/logrun.sh
+ExecStart=/usr/bin/python /root/shadowsocksr/server.py
 ExecStop=/root/shadowsorksr/stop.sh
 TimeoutSec=30
 Restart=on-failure
